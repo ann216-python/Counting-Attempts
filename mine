@@ -1,0 +1,26 @@
+# Exercises number 2 of while loop
+
+# Create a program that allows the  user to input his/her Username and Password. Then calculate every attempts after getting the correct Username and Password.
+
+
+print('\nSign for Username and Password')
+att=0
+# att=att+1
+att+=1
+b=input('\nEnter Username: ')
+d=input('Enter Password: ')
+e='mmm'
+o='000'
+print('attempt: ',att)
+while True:
+  	if b!=e and d!=o and att!=0:
+  		print('incorrect Username and Password')
+  		b=input('\nEnter Username: ')
+  		d=input('Enter Password: ')
+  		att+=1
+  		print('attemps: ',att)
+  	else:
+  			print('You are successfully Log In in Account')
+  			break
+  			
+print('\nOverall Attempts: ',att)
